@@ -127,6 +127,16 @@ git fetch--> "é um comando básico usado para baixar conteúdos de um repositó
 
 git pull --> "é usado para buscar e baixar conteúdo de repositórios remotos e fazer a atualização imediata ao repositório local para que os conteúdos sejam iguais. Fazer o merge de alterações upstream remotas no repositório local é algo comum em fluxos de trabalho de colaboração baseados em Git."
 
-```
-
+```bash
+# Aula do dia 19/06/23.
+## Configurando o gitbash e o github.
+````bash
+ssh.ls -al ~/.ssh --> "Verificar se existe chave" 
+(ID)ssh-keygen -t ed25519 -C "your_email@example.com"--> "Adicionar uma nova chave."
+"$(ssh-agent -s)"-->"Inicializar agente-ssh.eval" 
+ssh-add~/.ssh/id_ed25519 --> "Adicionar chave ssh ao agente."
+## SSH - chave
+ssh.clip < ~/.ssh/id_ed25519.pub--> "Copiar chave" 
+"Adicionar chave no githubGithub -> Settings -> SSH and GPG keys -> New SSH key -> Colar*Coloque um título que identifique a chave*" ( em seu perfil no github)
+ssh -T git@github.com--> "Testar conexão" ( irá aparecer um texto com duas opções de digitação yes/no, digite -yes-)
 
