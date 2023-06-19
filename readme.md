@@ -1,4 +1,3 @@
-[15:13] EMILLY DA SILVA DA LUZ
 
 # Inicializando git local
 
